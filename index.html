@@ -1,0 +1,158 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101827">
+    <title>Electrochemistry | Class 12 MCQ Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="#" class="logo">⚡ Electro<span>Lab</span></a>
+        <span class="class-tag">CBSE CLASS 12</span>
+    </header>
+
+    <main class="container">
+
+        <section id="intro" class="intro card">
+            <div class="badge">CHEMISTRY · CHAPTER 03</div>
+            <h1>Electrochemistry<br><span>Challenge</span></h1>
+
+            <p class="subtitle">
+                Test your understanding of the complete Electrochemistry chapter.
+            </p>
+
+            <div class="stats">
+                <div><strong>15</strong><span>Questions</span></div>
+                <div><strong>15 min</strong><span>Duration</span></div>
+                <div><strong>1 mark</strong><span>Per question</span></div>
+            </div>
+
+            <div class="topic-list">
+                <span>Galvanic Cells</span>
+                <span>Nernst Equation</span>
+                <span>Conductance</span>
+                <span>Electrolysis</span>
+                <span>Batteries</span>
+                <span>Corrosion</span>
+            </div>
+
+            <label for="studentName" class="name-label">Your name (optional)</label>
+            <input
+                id="studentName"
+                type="text"
+                maxlength="40"
+                placeholder="Enter your name"
+            >
+
+            <button id="startBtn" class="primary-btn">
+                Start Test <span>→</span>
+            </button>
+
+            <p class="small-note">
+                Choose the best answer for each question. Each question carries 1 mark.
+            </p>
+        </section>
+
+        <section id="quiz" class="quiz-layout hidden">
+
+            <div class="quiz-main card">
+
+                <div class="quiz-header">
+                    <div>
+                        <span class="eyebrow">ELECTROCHEMISTRY TEST</span>
+                        <h2 id="questionCounter">Question 1 of 15</h2>
+                    </div>
+
+                    <div class="timer" id="timer" aria-live="off">
+                        ⏱ <span id="timeText">15:00</span>
+                    </div>
+                </div>
+
+                <div class="progress-track">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+
+                <div class="question-meta">
+                    <span id="topicBadge" class="topic-badge">Electrochemical Cells</span>
+                    <span id="answeredCount">Answered: 0/15</span>
+                </div>
+
+                <h3 id="questionText" class="question-text"></h3>
+
+                <div id="options" class="options"></div>
+
+                <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+
+                <div class="navigation">
+                    <button id="prevBtn" class="secondary-btn">← Previous</button>
+                    <button id="nextBtn" class="primary-btn">Next →</button>
+                </div>
+
+            </div>
+
+            <aside class="sidebar card">
+                <h3>Question Palette</h3>
+                <p class="sidebar-hint">Select a number to navigate.</p>
+
+                <div id="questionPalette" class="palette"></div>
+
+                <div class="legend">
+                    <span><i class="legend-dot answered-dot"></i> Answered</span>
+                    <span><i class="legend-dot current-dot"></i> Current</span>
+                    <span><i class="legend-dot"></i> Unanswered</span>
+                </div>
+
+                <div class="sidebar-score">
+                    <span>Questions answered</span>
+                    <strong id="sidebarAnswered">0 / 15</strong>
+                </div>
+
+                <button id="submitBtn" class="submit-btn">Submit Test</button>
+            </aside>
+
+        </section>
+
+        <section id="result" class="card result hidden">
+            <div class="badge">TEST COMPLETED</div>
+            <h1 id="resultTitle">Your Results</h1>
+            <p id="resultMessage"></p>
+
+            <div class="score-circle">
+                <strong id="scoreValue">0/15</strong>
+                <span id="percentageValue">0%</span>
+            </div>
+
+            <div class="result-stats">
+                <div><strong id="correctCount">0</strong><span>Correct</span></div>
+                <div><strong id="wrongCount">0</strong><span>Incorrect</span></div>
+                <div><strong id="unattemptedCount">0</strong><span>Unattempted</span></div>
+            </div>
+
+            <div class="review-heading">
+                <h2>Answer Review</h2>
+                <p>Review every answer and understand the solution.</p>
+            </div>
+
+            <div id="reviewList" class="review-list"></div>
+
+            <div class="result-actions">
+                <button id="retakeBtn" class="primary-btn">↻ Retake Test</button>
+                <button id="printBtn" class="secondary-btn">Print Results</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>ElectroLab · Class 12 Chemistry</p>
+        <p>Practice • Understand • Improve</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
